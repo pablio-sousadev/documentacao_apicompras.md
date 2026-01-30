@@ -1,6 +1,17 @@
-# Documentação da API de Dados Abertos de Compras Governamentais
+<div align="center">
+
+# 🏛️ API de Dados Abertos de Compras Governamentais
+
+![Gov.br](https://www.gov.br/transferegov/pt-br/noticias/noticias/arquivos-e-imagens/mgi.png)
+
+![Status](https://img.shields.io/badge/Status-Online-00995D?style=for-the-badge)
+![Versão](https://img.shields.io/badge/Versão-v3.0-FFCD00?style=for-the-badge&labelColor=gov.br)
 
 **Base URL:** `https://dadosabertos.compras.gov.br`
+
+</div>
+
+---
 
 O Sistema Integrado de Administração de Serviços Gerais – Siasg, instituído pelo art. 7º do Decreto nº 1.094, de 23 de março de 1994, é o sistema informatizado de apoio às atividades operacionais do Sistema de Serviços Gerais – Sisg. A finalidade do Siasg é integrar os órgãos da Administração Pública Federal direta, autárquica e fundacional. Após a reestruturação do Sisg (nova releitura), o SIASG passa a receber o sistema de contratações do governo federal, Compras.gov.br. O Compras.gov.br é composto por diversos módulos responsáveis pela operacionalização de cada uma das várias etapas da cadeia da contratação pública: SICAF, PGC, Catálogo, Divulgação de compras, Sala de disputa, Contratos e muito mais.
 
@@ -113,22 +124,23 @@ Serviço que permite consultar os dados de um grupo de material pelo código do 
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-material/1_consultarGrupoMaterial?codigoGrupo=16`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+
 ```json
 {
- "resultado": [
- {
- "codigoGrupo": 16,
- "nomeGrupo": "COMPONENTES E ACESSORIOS DE AERONAVES",
- "statusGrupo": true,
- "dataHoraAtualizacao": "2021-10-16T09:16:33.723625"
- }
- ],
- "totalRegistros": 1,
- "totalPaginas": 1,
- "paginasRestantes": 0
+  "resultado": [
+    {
+      "codigoGrupo": 16,
+      "nomeGrupo": "COMPONENTES E ACESSORIOS DE AERONAVES",
+      "statusGrupo": true,
+      "dataHoraAtualizacao": "2021-10-16T09:16:33.723625"
+    }
+  ],
+  "totalRegistros": 1
 }
 ```
+</details>
 
 ---
 
@@ -152,7 +164,9 @@ Serviço que permite consultar os dados de uma classe de material pelo código d
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-material/2_consultarClasseMaterial?codigoClasse=1615`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
  "resultado": [
@@ -170,6 +184,7 @@ Serviço que permite consultar os dados de uma classe de material pelo código d
  "paginasRestantes": 0
 }
 ```
+</details>
 
 ---
 
@@ -194,7 +209,9 @@ Serviço que permite consultar os dados de um Produto Descritivo Básico - PDM d
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-material/3_consultarPdmMaterial?statusPdm=1&codigoPdm=10468`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
  "resultado": [
@@ -214,6 +231,7 @@ Serviço que permite consultar os dados de um Produto Descritivo Básico - PDM d
  "paginasRestantes": 0
 }
 ```
+</details>
 
 ---
 
@@ -242,7 +260,9 @@ Serviço que permite consultar os dados de um item de material pelo código do g
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-material/4_consultarItemMaterial?codigoItem=46736`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
  "resultado": [
@@ -268,6 +288,7 @@ Serviço que permite consultar os dados de um item de material pelo código do g
  "paginasRestantes": 0
 }
 ```
+</details>
 
 ---
 
@@ -290,7 +311,9 @@ Serviço que permite consultar os dados de uma nautreza de material pelo código
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-material/5_consultarMaterialNaturezaDespesa?codigoPdm=6&codigoNaturezaDespesa=33903016&statusNaturezaDespesa=true`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
     "resultado": [
@@ -306,6 +329,7 @@ Serviço que permite consultar os dados de uma nautreza de material pelo código
     "paginasRestantes": 0
 }
 ```
+</details>
 
 ---
 
@@ -327,7 +351,9 @@ Serviço que permite consultar os dados de unidade de fornecimento de material p
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-material/6_consultarMaterialUnidadeFornecimento?codigoPdm=11&statusUnidadeFornecimentoPdm=True`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
  "resultado": [
@@ -343,6 +369,7 @@ Serviço que permite consultar os dados de unidade de fornecimento de material p
  "dataHoraAtualizacao": "2021-10-16T09:30:54.651407"
  }...
 ```
+</details>
 
 ---
 
@@ -363,7 +390,9 @@ Serviço que permite consultar os dados de características de material pelo có
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-material/7_consultarMaterialCaracteristicas?codigoItem=46736`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
  "resultado": [
@@ -387,6 +416,7 @@ Serviço que permite consultar os dados de características de material pelo có
  "paginasRestantes": 0
 }
 ```
+</details>
 
 ***
 
@@ -414,7 +444,9 @@ Serviço que permite consultar os dados de uma seção de serviço pelo código 
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-servico/1_consultarSecaoServico?codigoSecao=5`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
  "resultado": [
@@ -430,6 +462,7 @@ Serviço que permite consultar os dados de uma seção de serviço pelo código 
  "paginasRestantes": 0
 }
 ```
+</details>
 
 ---
 
@@ -452,7 +485,9 @@ Serviço que permite consultar os dados de uma divisão de serviço pelo código
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-servico/2_consultarDivisaoServico?codigoDivisao=54`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+
 ```json
 {
  "resultado": [
@@ -470,6 +505,7 @@ Serviço que permite consultar os dados de uma divisão de serviço pelo código
  "paginasRestantes": 0
 }
 ```
+</details>
 
 ---
 
@@ -492,7 +528,9 @@ Serviço que permite consultar os dados de um grupo de serviço pelo código da 
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-servico/3_consultarGrupoServico?codigoGrupo=541`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
  "resultado": [
@@ -511,6 +549,7 @@ Serviço que permite consultar os dados de um grupo de serviço pelo código da 
  "paginasRestantes": 0
 }
 ```
+</details>
 
 ---
 
@@ -533,7 +572,9 @@ Serviço que permite consultar os dados de uma classe de serviço pelo código d
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-servico/4_consultarClasseServico?codigoClasse=5411`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
  "resultado": [
@@ -551,6 +592,7 @@ Serviço que permite consultar os dados de uma classe de serviço pelo código d
  "paginasRestantes": 0
 }
 ```
+</details>
 
 ---
 
@@ -573,7 +615,9 @@ Serviço que permite consultar os dados de uma subclasse de serviço pelo códig
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-servico/5_consultarSubClasseServico?codigoSubclasse=54111`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
  "resultado": [
@@ -591,6 +635,7 @@ Serviço que permite consultar os dados de uma subclasse de serviço pelo códig
  "paginasRestantes": 0
 }
 ```
+</details>
 
 ---
 
@@ -620,7 +665,9 @@ Serviço que permite consultar os dados de um item de serviço pelo código da s
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-servico/6_consultarItemServico?codigoServico=1627`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
  "resultado": [
@@ -648,6 +695,7 @@ Serviço que permite consultar os dados de um item de serviço pelo código da s
  "paginasRestantes": 0
 }
 ```
+</details>
 
 ---
 
@@ -669,7 +717,9 @@ Serviço que permite consultar os dados de unidade de medida pelo código do ser
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-servico/7_consultarUndMedidaServico?codigoServico=19`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
  "resultado": [
@@ -685,6 +735,7 @@ Serviço que permite consultar os dados de unidade de medida pelo código do ser
  "paginasRestantes": 0
 }
 ```
+</details>
 
 ---
 
@@ -707,7 +758,9 @@ Serviço que permite consultar os dados de natureza de despesa pelo código do s
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-servico/8_consultarNaturezaDespesaServico?codigoServico=19&codigoNaturezaDespesa=33903905&statusNaturezaDespesa=true`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
     "resultado": [
@@ -723,6 +776,7 @@ Serviço que permite consultar os dados de natureza de despesa pelo código do s
     "paginasRestantes": 0
 }
 ```
+</details>
 
 ***
 
@@ -753,7 +807,9 @@ Serviço que permite consultar os dados de preços praticados na aquisição de 
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-pesquisa-preco/1_consultarMaterial?pagina=1&tamanhoPagina=10&codigoItemCatalogo=470419&estado=RJ&codigoMunicipio=3303302&codigoClasse=6145`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
     "resultado": [
@@ -795,6 +851,7 @@ Serviço que permite consultar os dados de preços praticados na aquisição de 
             "nomeClasse": "FIOS E CABOS ELÉTRICOS"
         }...
 ```
+</details>
 
 ---
 
@@ -827,7 +884,9 @@ Serviço que permite consultar os dados das descrições dos itens de materias.
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-pesquisa-preco/2_consultarMaterialDetalhe?pagina=1&idCompra=98108305000252023&codigoItemCatalogo=446573`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
     "resultado": [
@@ -840,6 +899,7 @@ Serviço que permite consultar os dados das descrições dos itens de materias.
             "descricaoDetalhadaItem": "ACESSÓRIOS / EQUIPAMENTOS OFICINA MANUTENÇÃO, TIPO CARRO ESTEIRA, MATERIAL AÇO"
         }...
 ```
+</details>
 
 ---
 
@@ -874,7 +934,9 @@ Serviço que permite consultar os dados de preços praticados na contração de 
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-pesquisa-preco/3_consultarServico?codigoItemCatalogo=1627&codigoUasg=153063&estado=PA&codigoMunicipio=1501402`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
     "resultado": [
@@ -910,6 +972,7 @@ Serviço que permite consultar os dados de preços praticados na contração de 
             "dataHoraAtualizacaoUasg": "2025-07-07T15:16:00"
         }...
 ```
+</details>
 
 ---
 
@@ -941,7 +1004,9 @@ Serviço que permite consultar os dados das descrições dos itens de serviços.
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-pesquisa-preco/4_consultarServicoDetalhe?idCompra=7001905000472023&codigoItemCatalogo=1627`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
     "resultado": [
@@ -961,6 +1026,7 @@ Serviço que permite consultar os dados das descrições dos itens de serviços.
     "timeZoneAtual": "GMT-03:00"
 }
 ```
+</details>
 
 ---
 
@@ -998,7 +1064,9 @@ Serviço que permite consultar os dados dos itens do plano de contratação de u
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-pgc/1_consultarPgcDetalhe?pagina=1&tamanhoPagina=10&orgao=05457283000119&anoPcaProjetoCompra=2022&codigoUasg=540004`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
     "resultado": [
@@ -1057,6 +1125,7 @@ Serviço que permite consultar os dados dos itens do plano de contratação de u
             "dataHoraAtualizacaoItem": "2023-05-20T05:20:57.681263"
         }...
 ```
+</details>
 
 ---
 
@@ -1090,7 +1159,9 @@ Serviço que permite consultar os dados de itens do planejamento da contrataçã
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-pgc/2_consultarPgcDetalheCatalogo?pagina=1&tamanhoPagina=10&anoPcaProjetoCompra=2022&tipo=Material&codigo=7010`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
     "resultado": [
@@ -1149,6 +1220,7 @@ Serviço que permite consultar os dados de itens do planejamento da contrataçã
             "dataHoraAtualizacaoItem": "2023-05-19T19:19:52.355192"
         }...
 ```
+</details>
 
 ---
 
@@ -1180,7 +1252,9 @@ Serviço que permite consultar os dados de quantidade total de um item e valor t
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-pgc/3_consultarPgcAgregacao?pagina=1&orgao=05457283000119&ano=2022`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
     "resultado": [
@@ -1203,6 +1277,7 @@ Serviço que permite consultar os dados de quantidade total de um item e valor t
     "obs": "Os valores disponiveis estão sujeitos a alterações"
 }
 ```
+</details>
 
 ---
 
@@ -1243,7 +1318,9 @@ Serviço que permite consultar dados de uma Uasg.
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-uasg/1_consultarUasg?codigoUasg=200014&statusUasg=1`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
     "resultado": [
@@ -1277,6 +1354,7 @@ Serviço que permite consultar dados de uma Uasg.
     "paginasRestantes": 0
 }
 ```
+</details>
 
 ---
 
@@ -1312,7 +1390,9 @@ Serviço que permite consultar os dados dos Órgãos pertencentes ao sistema Com
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-uasg/2_consultarOrgao?codigoOrgao=26000&statusOrgao=true`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
     "resultado": [
@@ -1341,6 +1421,7 @@ Serviço que permite consultar os dados dos Órgãos pertencentes ao sistema Com
     "paginasRestantes": 0
 }
 ```
+</details>
 
 ---
 
@@ -1381,7 +1462,9 @@ Possibilita a obtenção de dados sobre as Licitações realizadas pelo Governo 
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-legado/1_consultarLicitacao?pagina=1&tamanhoPagina=500&uasg=120632&numero_aviso=942023&modalidade=5&data_publicacao_inicial=2023-12-10&data_publicacao_final=2023-12-15&pertence14133=true`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
  "resultado": [
@@ -1405,6 +1488,7 @@ Possibilita a obtenção de dados sobre as Licitações realizadas pelo Governo 
  "totalPaginas": 1
 }
 ```
+</details>
 
 ---
 
@@ -1448,7 +1532,9 @@ Possibilita a obtenção de dados sobre os itens de licitações realizadas pelo
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-legado/2_consultarItemLicitacao?modalidade=1`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
     "resultado": [
@@ -1475,6 +1561,7 @@ Possibilita a obtenção de dados sobre os itens de licitações realizadas pelo
             "dt_alteracao": "2025-04-24T15:51:00"
         }...
 ```
+</details>
 
 ---
 
@@ -1518,7 +1605,9 @@ Possibilita a obtenção de dados sobre os pregões realizados pelo Governo Fede
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-legado/3_consultarPregoes?pagina=1&tamanhoPagina=10&co_uasg=10001&dt_data_edital_inicial=2019-01-07&dt_data_edital_final=2019-01-17&pertence14133=false`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
     "resultado": [
@@ -1547,6 +1636,7 @@ Possibilita a obtenção de dados sobre os pregões realizados pelo Governo Fede
             "pertence14133": false
         }...
 ```
+</details>
 
 ---
 
@@ -1587,7 +1677,9 @@ Possibilita a obtenção de dados sobre os itens de pregões realizados pelo Gov
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-legado/4_consultarItensPregoes?dt_hom_inicial=2023-01-01&dt_hom_final=2023-01-10`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
     "resultado": [
@@ -1615,6 +1707,7 @@ Possibilita a obtenção de dados sobre os itens de pregões realizados pelo Gov
             "dt_alteracao": "2025-03-05T17:37:00"
         }...
 ```
+</details>
 
 ---
 
@@ -1662,7 +1755,9 @@ Possibilita a obtenção de dados sobre as compras sem licitação realizadas pe
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-legado/5_consultarComprasSemLicitacao?pagina=1&tamanhoPagina=500&dt_ano_aviso=2023&co_orgao=30907&co_uasg=200602`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
     "resultado": [
@@ -1693,6 +1788,7 @@ Possibilita a obtenção de dados sobre as compras sem licitação realizadas pe
             "pertence14133": true
         }...
 ```
+</details>
 
 ---
 
@@ -1734,7 +1830,9 @@ Possibilita a obtenção de dados sobre os itens de compra sem licitação reali
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-legado/6_consultarCompraItensSemLicitacao?co_uasg=170133&dt_ano_aviso_licitacao=2023`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
     "resultado": [
@@ -1779,6 +1877,7 @@ Possibilita a obtenção de dados sobre os itens de compra sem licitação reali
             "dt_alteracao": "2024-07-17T11:24:00"
         }...
 ```
+</details>
 
 ---
 
@@ -1831,7 +1930,9 @@ Possibilita a obtenção de dados sobre licitações do tipo RDC realizadas pelo
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-legado/7_consultarRdc?data_publicacao_max=2019-03-01&data_publicacao_min=2019-01-01`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
     "resultado": [
@@ -1858,6 +1959,7 @@ Possibilita a obtenção de dados sobre licitações do tipo RDC realizadas pelo
             "uf_uasg": "RJ"
         }...
 ```
+</details>
 
 ***
 
@@ -1893,7 +1995,9 @@ Serviço que permite acessar informações detalhadas sobre contratações reali
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-contratacoes/1_consultarContratacoes_PNCP_14133?pagina=1&tamanhoPagina=10&dataPublicacaoPncpInicial=2024-01-01&dataPublicacaoPncpFinal=2024-12-31&codigoModalidade=5&amparoLegalCodigoPncp=1&contratacaoExcluida=false`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
     "resultado": [
@@ -1952,6 +2056,7 @@ Serviço que permite acessar informações detalhadas sobre contratações reali
             "contratacaoExcluida": false
         }...
 ```
+</details>
 
 ---
 
@@ -2003,7 +2108,9 @@ Serviço que oferece acesso aos dados específicos de itens vinculados às contr
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-contratacoes/2_consultarItensContratacoes_PNCP_14133?pagina=1&tamanhoPagina=10&unidadeOrgaoCodigoUnidade=200350&orgaoEntidadeCnpj=00394494000136&situacaoCompraItem=4&materialOuServico=M&codigoClasse=6510&codItemCatalogo=279727&dataInclusaoPncpInicial=2023-10-01&dataInclusaoPncpFinal=2023-10-01&dataAtualizacaoPncp=2023-10-01`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
     "resultado": [
@@ -2059,6 +2166,7 @@ Serviço que oferece acesso aos dados específicos de itens vinculados às contr
     "paginasRestantes": 0
 }
 ```
+</details>
 
 ---
 
@@ -2112,7 +2220,9 @@ Serviço que permite consultar os resultados associados aos itens contratados, i
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-contratacoes/3_consultarResultadoItensContratacoes_PNCP_14133?pagina=1&tamanhoPagina=10&unidadeOrgaoCodigoUnidade=155124&nifFornecedor=28546470000174&dataResultadoPncpInicial=2024-11-01&dataResultadoPncpFinal=2024-11-30&aplicacaoMargemPreferencia=false`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
     "resultado": [
@@ -2158,6 +2268,7 @@ Serviço que permite consultar os resultados associados aos itens contratados, i
             "timezoneCotacaoMoedaEstrangeira": null
         }...
 ```
+</details>
 
 ---
 
@@ -2206,7 +2317,9 @@ Consulta as Atas de Registro de Preços vigentes ou cadastradas, listando inform
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-arp/1_consultarARP?pagina=1&tamanhoPagina=10&codigoUnidadeGerenciadora=160482&numeroAtaRegistroPreco=00044/2023&dataVigenciaInicial=2023-12-22&dataVigenciaFinal=2024-12-22`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
     "resultado": [
@@ -2243,6 +2356,7 @@ Consulta as Atas de Registro de Preços vigentes ou cadastradas, listando inform
     "paginasRestantes": 0
 }
 ```
+</details>
 
 ---
 
@@ -2285,7 +2399,9 @@ Endpoint específico para filtrar ARPs com base no término de sua vigência.
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-arp/1.2_consultarARP_FimVigencia?pagina=1&tamanhoPagina=10&codigoUnidadeGerenciadora=194008&codigoModalidadeCompra=05&numeroAtaRegistroPreco=00014%2F2023&dataVigenciaFinalMin=2025-01-01&dataVigenciaFinalMax=2025-01-31&dataAssinaturaInicial=2024-01-01&dataAssinaturaFinal=2025-01-01`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
     "resultado": [
@@ -2322,6 +2438,8 @@ Endpoint específico para filtrar ARPs com base no término de sua vigência.
     "paginasRestantes": 0
 }
 ```
+</details>
+
 ---
 
 ### 2. Consultar Item da ARP
@@ -2353,7 +2471,9 @@ Retorna a lista de itens associados a uma ARP, incluindo descrição, quantidade
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-arp/2_consultarARPItem?dataVigenciaInicial=2023-06-08&dataVigenciaFinal=2024-06-08&numeroItem=00074&codigoItem=243008`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
     "resultado": [
@@ -2394,6 +2514,8 @@ Retorna a lista de itens associados a uma ARP, incluindo descrição, quantidade
             "nomePdm": null
         }...
 ```
+</details>
+
 ---
 
 ### 2.1 Consultar Item da ARP por ID
@@ -2432,7 +2554,9 @@ Serviço que permite consultar os dados das unidades participantes e saldos de u
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-arp/3_consultarUnidadesItem?pagina=<integer>&tamanhoPagina=<integer>&numeroAta=<string>&unidadeGerenciadora=<string>&numeroItem=<string>&dataAtualizacao=<string>`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
   "resultado": [
@@ -2460,6 +2584,7 @@ Serviço que permite consultar os dados das unidades participantes e saldos de u
   "paginasRestantes": 0
 }
 ```
+</details>
 
 ---
 
@@ -2483,7 +2608,9 @@ Serviço que permite consultar os saldos e quantidades empenhadas de um item em 
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-arp/4_consultarEmpenhosSaldoItem?pagina=<integer>&tamanhoPagina=<integer>&numeroAta=<string>&unidadeGerenciadora=<string>&dataAtualizacao=<striing>`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
   "resultado": [
@@ -2503,6 +2630,8 @@ Serviço que permite consultar os saldos e quantidades empenhadas de um item em 
   "paginasRestantes": 0
 }
 ```
+</details>
+
 ---
 
 ### 5. Consultar Adesões do Item
@@ -2528,7 +2657,9 @@ uma Ata de Registro de Preços.
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-material/1_consultarGrupoMaterial?codigoGrupo=16`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
   "resultado": [
@@ -2545,6 +2676,8 @@ uma Ata de Registro de Preços.
   "paginasRestantes": 0
 }
 ```
+</details>
+
 ***
 
 # Módulo Contratos
@@ -2579,7 +2712,9 @@ Retorna um conjunto de contratos registrados, incluindo dados como número do co
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-contratos/1_consultarContratos?pagina=1&tamanhoPagina=10&codigoOrgao=99537&codigoUnidadeGestora=110161&codigoUnidadeGestoraOrigemContrato=926403&codigoTipo=99&codigoCategoria=60&dataVigenciaInicialMin=2023-07-06&dataVigenciaInicialMax=2023-12-31`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
     "resultado": [
@@ -2624,6 +2759,7 @@ Retorna um conjunto de contratos registrados, incluindo dados como número do co
             "contratoExcluido": false
         }...
 ```
+</details>
 
 ---
 
@@ -2669,7 +2805,9 @@ Permite filtrar contratos cujo fim de vigência ocorra dentro de um intervalo de
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-contratos/1.2_consultarContratos_FimVigencia?pagina=1&tamanhoPagina=10&codigoOrgao=95559&codigoUnidadeGestora=180183&codigoUnidadeGestoraOrigemContrato=180183&codigoUnidadeRealizadoraCompra=180183&codigoModalidadeCompra=05&codigoTipo=99&codigoCategoria=60&niFornecedor=44092021000150&dataVigenciaFinalMin=2025-01-01&dataVigenciaFinalMax=2025-01-31`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```
 {
     "resultado": [
@@ -2718,6 +2856,7 @@ Permite filtrar contratos cujo fim de vigência ocorra dentro de um intervalo de
     "paginasRestantes": 1
 }
 ```
+</details>
 
 ---
 
@@ -2749,7 +2888,9 @@ Lista ou detalha os itens vinculados a cada contrato, exibindo quantidades, valo
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-contratos/2_consultarContratosItem?pagina=1&tamanhoPagina=10&codigoOrgao=22000&codigoUnidadeGestora=110161&codigoUnidadeGestoraOrigemContrato=130016&codigoUnidadeRealizadoraCompra=130016&codigoItem=409245&dataVigenciaInicialMin=2021-10-27&dataVigenciaInicialMax=2022-01-24`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
     "resultado": [
@@ -2827,6 +2968,7 @@ Lista ou detalha os itens vinculados a cada contrato, exibindo quantidades, valo
     "paginasRestantes": 0
 }
 ```
+</details>
 
 ---
 
@@ -2871,7 +3013,9 @@ Lista ou detalha os dados cadastrais dos fornecedores, exibindo informações co
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-fornecedor/1_consultarFornecedor?cnpj=00001172000180&codigoCnae=5822101&ativo=True`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
     "resultado": [
@@ -2896,6 +3040,7 @@ Lista ou detalha os dados cadastrais dos fornecedores, exibindo informações co
     "paginasRestantes": 0
 }
 ```
+</details>
 
 ***
 
@@ -2923,7 +3068,9 @@ Serviço que permite consultar as contratações ("releases") formatadas segundo
 
 **URL:** `https://dadosabertos.compras.gov.br/modulo-ocds/1_releases?page=<integer>&offsset=<integer>&buyerID=<string>&releaseStartDate=<string>&releaseEndDate=<string>`
 
-**Resposta:**
+<details>
+<summary><b>🔎 Clique para ver a Resposta da requisição</b></summary>
+   
 ```json
 {
   "publisherDTO": {
@@ -2969,3 +3116,4 @@ Serviço que permite consultar as contratações ("releases") formatadas segundo
   ]
 }...
 ```
+</details>
